@@ -16,6 +16,22 @@ module.exports = {
         primary: ["var(--font-primary)"],
         secondary: ["var(--font-secondary)"],
       },
+      //colors
+      backgroundColor: {
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        accent: "var(--text-accent)",
+      },
+      borderColor: {
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        accent: "var(--text-accent)",
+      },
+      textColor: {
+        primary: "var(--text-primary)",
+        secondary: "var(--text-secondary)",
+        accent: "var(--text-accent)",
+      },
     },
   },
   plugins: [],
