@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-primary">
+    <div className="font-secondary">
       <h3>This is the title</h3>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
