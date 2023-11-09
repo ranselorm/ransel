@@ -23,13 +23,13 @@ module.exports = {
         accent: "var(--text-accent)",
       },
       borderColor: {
-        primary: "var(--text-primary)",
-        secondary: "var(--text-secondary)",
-        accent: "var(--text-accent)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
       },
       textColor: {
-        primary: "var(--text-primary)",
-        secondary: "var(--text-secondary)",
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
         accent: "var(--text-accent)",
       },
     },

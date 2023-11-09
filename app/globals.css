@@ -11,13 +11,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-light: 214, 219, 220;
   --background-dark: 255, 255, 255;
-  --font-light: 255, 255, 255;
-  --font-dark: 0, 0, 0;
+  --font-light: rgb(209, 213, 219);
+  /* --font-dark: #161616 */
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
-  --text-primary: #ff5733;
-  --text-secondary: #0088ff;
-  --text-accent: #ffd700;
+  --color-primary: #2a2b6a;
+  --color-secondary: #5c45fd;
+  --color-accent: #ffd700;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +29,8 @@
 }
 
 body {
-  font-size: 16px;
   color: var(--font-light);
+  background-color: #161616;
+  padding: 0;
+  margin: 0;
 }
