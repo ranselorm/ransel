@@ -9,13 +9,13 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-light: 214, 219, 220;
+  --background-light: rgb(230, 232, 235);
   --background-dark: 255, 255, 255;
   --font-light: rgb(209, 213, 219);
   /* --font-dark: #161616 */
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "Poppins", sans-serif;
-  --color-primary: #2a2b6a;
+  --color-primary: black;
   --color-secondary: #5c45fd;
   --color-accent: #ffd700;
 }
@@ -30,7 +30,8 @@
 
 body {
   color: var(--font-light);
-  background-color: #161616;
+  background-color: var(--background-light);
+  /* background-color: white; */
   padding: 0;
   margin: 0;
 }

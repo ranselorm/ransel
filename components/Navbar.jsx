@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
+import Button from "./ui/Button";
+
 const navlinks = [
   {
     title: "Home",
     path: "/",
-  },
-  {
-    title: "About",
-    path: "/about",
   },
   {
     title: "Services",
@@ -18,19 +16,19 @@ const navlinks = [
     path: "/portfolio",
   },
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Blog",
+    path: "/blog",
   },
 ];
 
 const Navbar = () => {
   return (
-    <nav className="bg-transparent font-primary text-[16px]">
+    <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium">
       <div className="px-[100px] py-[30px] w-full flex justify-between items-center">
         <div>
           <h3>Ransel</h3>
         </div>
-        <div className="flex gap-x-6">
+        <div className="flex gap-x-10">
           {navlinks.map((link, index) => (
             <Link
               href={link.path}
@@ -41,14 +39,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <div className="flex gap-x-6">
-          <p className="text-[25px] cursor-pointer text-secondary  hover:text-primary transition-all">
-            <AiOutlineGithub />
-          </p>
-          <p className="text-[25px] cursor-pointer text-secondary  hover:text-primary transition-all">
-            <AiOutlineLinkedin />
-          </p>
-        </div>
+        <Button text="Let's Talk" icon={<BsArrowRight />} />
       </div>
     </nav>
   );
