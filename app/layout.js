@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <div>{children}</div>
+        <div className="px-6 lg:px-[100px] lg:py-[30px]">{children}</div>
         <Footer />
       </body>
     </html>

@@ -28,7 +28,7 @@ const Navbar = () => {
         <div>
           <h3>Ransel</h3>
         </div>
-        <div className="flex gap-x-10">
+        <div className="lg:flex gap-x-10 hidden">
           {navlinks.map((link, index) => (
             <Link
               href={link.path}
@@ -39,7 +39,9 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button text="Let's Talk" icon={<BsArrowRight />} />
+        <div className="hidden lg:flex">
+          <Button text="Let's Talk" icon={<BsArrowRight />} />
+        </div>
       </div>
     </nav>
   );

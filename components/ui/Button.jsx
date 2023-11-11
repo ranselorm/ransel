@@ -1,10 +1,14 @@
 import React from "react";
 
-const Button = ({ text, icon }) => {
+const Button = ({ text, icon, fill, styles }) => {
   return (
-    <button className="py-1.5 px-2.5 bg-transparent border-2 border-black hover:bg-black hover:text-white transition-all duration-300 rounded-md text-black text-[16px] flex items-center gap-x-2">
+    <button
+      className={`${
+        fill ? "text-white bg-[#008b8b]" : "bg-transparent text-black"
+      } py-[10px] px-[15px] transition-all duration-300 rounded-xl text-[16px] flex items-center gap-x-2 border-2 border-secondary`}
+    >
       <span>{text}</span>
-      <span>{icon}</span>
+      <span className="font-medium text-[18px]">{icon}</span>
     </button>
   );
 };
