@@ -1,3 +1,6 @@
+// import { useActiveLink } from "next/navigation";
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Button from "./ui/Button";
@@ -22,6 +25,8 @@ const navlinks = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   return (
     <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium">
       <div className="px-[100px] py-[30px] w-full flex justify-between items-center">
@@ -33,7 +38,7 @@ const Navbar = () => {
             <Link
               href={link.path}
               key={index}
-              className="hover:text-secondary transition-all"
+              className="{`hover:text-secondary transition-all`}"
             >
               {link.title}
             </Link>

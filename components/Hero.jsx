@@ -1,13 +1,13 @@
-import React from "react";
+import Image from "next/image";
 import Button from "./ui/Button";
-import { AiOutlineSend } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <section className="mt-[20px]">
       <div className="flex items-center flex-col lg:flex-row justify-between">
-        <div className="border w-full lg:w-1/2 flex flex-col  items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-secondary">
-          <h4>
+        <article className="border w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-primary font-semibold">
+          <h4 className="text-[18px]">
             Hello there<span className="text-xl">&#x1F44B;</span>,
           </h4>
           <h2 className="text-3xl">
@@ -23,11 +23,22 @@ const Hero = () => {
             pariatur et, ut minus?
           </p>
           <div className="flex items-center gap-x-6">
-            <Button text="Contact Me" fill={true} icon={<AiOutlineSend />} />
-            <Button text="Hire Me" icon={<AiOutlineSend />} />
+            {/* <Button text="Contact" fill={true} icon={<AiOutlineSend />} /> */}
+            <Button text="Contact" fill={true} icon={<BsArrowRight />} />
+
+            <Button text="Portfolio" />
+          </div>
+        </article>
+        <div className="w-1/2 flex justify-end">
+          <div className="relative w-[360px] h-[360px]">
+            <Image
+              src="/shape3.png"
+              alt=""
+              className="w-full h-full object-cover drop-shadow-2xl"
+              fill
+            />
           </div>
         </div>
-        {/* <div className="bg-yellow-300 w-1/2">2</div> */}
       </div>
     </section>
   );
