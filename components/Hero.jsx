@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Hero = () => {
   return (
-    <section className="mt-[20px]">
+    <section className="mt-[20px] h-screen">
       <div className="flex items-center flex-col lg:flex-row justify-between">
         <article className="border w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-primary font-semibold">
           <h4 className="text-[18px]">
@@ -29,7 +29,7 @@ const Hero = () => {
             <Button text="Portfolio" />
           </div>
         </article>
-        <div className="w-1/2 flex justify-end">
+        <div className="lg:w-1/2 w-full flex justify-end mt-10 lg:mt-0">
           <div className="relative w-[360px] h-[360px]">
             <Image
               src="/shape3.png"

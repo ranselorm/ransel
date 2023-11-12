@@ -38,7 +38,9 @@ const Navbar = () => {
             <Link
               href={link.path}
               key={index}
-              className="{`hover:text-secondary transition-all`}"
+              className={`hover:text-secondary transition-all ${
+                pathname === link.path ? "text-secondary underline" : ""
+              }`}
             >
               {link.title}
             </Link>
