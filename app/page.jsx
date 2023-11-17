@@ -5,8 +5,8 @@ import ChooseMe from "@/components/ChooseMe";
 export default function Home() {
   return (
     <div className="">
-      {/* <Hero />
-      <Services /> */}
+      <Hero />
+      <Services />
       <ChooseMe />
     </div>
   );

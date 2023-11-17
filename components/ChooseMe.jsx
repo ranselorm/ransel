@@ -31,8 +31,8 @@ const data = [
 const ChooseMe = () => {
   return (
     <section className="text-black font-primary">
-      <div className="flex items-center gap-6">
-        <article className="w-full lg:w-2/5 text-center lg:text-left font-primary mr-10 flex flex-col items-start justify-start gap-y-4">
+      <div className="flex items-center flex-col gap-6 lg:flex-row justify-center">
+        <article className="w-full lg:w-2/5 text-center lg:text-left font-primary flex flex-col justify-start lg:items-start items-center gap-y-4">
           <SubHeading text="Why Choose Me?" />
           <Heading text="Why Hire Me For Your Next Project?" />
           <p className="text-[14px]">
@@ -43,11 +43,11 @@ const ChooseMe = () => {
           </p>
           <Button text="Hire Me" fill={true} />
         </article>
-        <div className="w-full lg:w-3/5 flex items-center flex-wrap gap-10">
+        <div className="w-full lg:w-3/5 flex items-center justify-center flex-col lg:flex-row flex-wrap gap-10">
           {data.map((d, index) => (
             <div
               key={index}
-              className="lg:w-2/5 flex flex-col gap-y-2 shadow-lg h-[200px] w-[200px] p-4 rounded-lg"
+              className=" lg:w-2/5 flex flex-col justify-center gap-y-2 shadow-lg h-[200px] p-4 rounded-lg"
             >
               <span className="text-[30px] font-bold text-[#008b8b]">
                 {d.icon}
