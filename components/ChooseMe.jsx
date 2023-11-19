@@ -30,7 +30,7 @@ const data = [
 
 const ChooseMe = () => {
   return (
-    <section className="text-black font-primary">
+    <section className="text-black font-primary mt-[100px]">
       <div className="flex items-center flex-col gap-6 lg:flex-row justify-center">
         <article className="w-full lg:w-2/5 text-center lg:text-left font-primary flex flex-col justify-start lg:items-start items-center gap-y-4">
           <SubHeading text="Why Choose Me?" />

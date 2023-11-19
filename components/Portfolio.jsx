@@ -16,7 +16,7 @@ const images = [
 
 const Portfolio = () => {
   return (
-    <section className="text-black mt-[200px]">
+    <section className="text-black mt-[100px]">
       <article className="w-full text-center font-primary flex flex-col items-center gap-y-4 mb-12">
         <SubHeading text="Portfolio List" />
         <Heading text="Captivating Portfolio" />
