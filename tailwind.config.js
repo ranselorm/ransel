@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         primary: ["var(--font-primary)"],
         secondary: ["var(--font-secondary)"],
+        main: ["Work Sans", "sans-serif"],
       },
       //colors
       backgroundColor: {
