@@ -11,16 +11,13 @@ const Hero = () => {
             Hello there<span className="text-xl">&#x1F44B;</span>,
           </h4>
           <h2 className="text-3xl">
-            Lorem ipsum dolor, sit amet consectetur
-            <span className="ml-2 text-secondary">
-              adipisicing elit. Porro, nostrum dolorem.
-            </span>
+            Lorem ipsum dolor
+            <span className="ml-2 text-secondary">adipisicing.</span>
           </h2>
           <p className="text-[16px] lg:w-10/12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quas
             corrupti aspernatur reprehenderit neque sequi adipisci expedita
-            cupiditate aut distinctio consequatur a commodi sunt odio iste
-            pariatur et, ut minus?
+            cupiditate.
           </p>
           <div className="flex items-center gap-x-6">
             {/* <Button text="Contact" fill={true} icon={<AiOutlineSend />} /> */}
