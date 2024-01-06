@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="mt-[20px] h-screen font-main">
       <div className="flex items-center flex-col lg:flex-row justify-between">
-        <article className="border w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-primary font-semibold">
+        <article className="border w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-semibold">
           <h4 className="text-[18px]">
             Hello there<span className="text-xl">&#x1F44B;</span>,
           </h4>

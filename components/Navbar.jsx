@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium">
-      <div className="px-[100px] py-[30px] w-full flex justify-between items-center">
+      <div className="py-[30px] w-full flex justify-between items-center">
         <div>
           <h3>Ransel</h3>
         </div>
