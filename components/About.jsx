@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { BsSend } from "react-icons/bs";
+import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section className="px-4 md:px-10 text-black/90 font-main">
-      <div className="flex flex-col md:flex-row-reverse items-center">
+    <section className="text-black/90 font-main -mt-[150px] px-4 lg:px-[150px] lg:py-[30px]">
+      <div className="flex flex-col-reverse md:flex-row-reverse items-center">
         <div className="w-full md:w-9/12">
-          <article className="flex flex-col gap-y-5 text-[17.5px]">
+          <article className="flex flex-col items-start gap-y-4 text-[17.5px]">
             <div>
               <h2 className="text-[20px] font-semibold font-primary">
                 About Me
@@ -27,16 +28,7 @@ const About = () => {
                 neque harum perferendis sunt tempora rem.
               </p>
             </div>
-            {/* <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit saepe
-              ut excepturi iure quis perspiciatis nam aperiam qui inventore
-              unde, quod eum? Ex hic earum blanditiis delectus dolorem odit
-              veniam.
-            </p> */}
-
-            <button className="bg-[#008b8b] text-white py-[6px] px-4 text-[16px] rounded-md border-2 border-secondary hover:bg-transparent hover:text-black transition hover:border-secondary w-full md:w-max hidden md:flex">
-              Let's Connect
-            </button>
+            <Skills />
           </article>
         </div>
         <div className="w-full md:w-9/12 flex justify-center">
