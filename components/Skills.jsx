@@ -29,7 +29,7 @@ const skills = [
 const Skills = () => {
   return (
     <div className="h-[80px] flex justify-start items-center w-full">
-      <div className="flex flex-wrap justify-start items-center gap-x-[40px] gap-y-5">
+      <div className="flex flex-wrap justify-start items-center gap-x-[40px] gap-y-5 drop-shadow-md">
         {skills.map((skill, index) => (
           <div
             className="relative w-[30px] md:w-[35px] h-[30px] md:h-[35px]"
