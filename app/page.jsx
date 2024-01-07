@@ -8,9 +8,8 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="">
-      {/* <Hero />
-      <About /> */}
-      {/* <Skills /> */}
+      <Hero />
+      <About />
       {/* <Services /> */}
       {/* <ChooseMe /> */}
       <Portfolio />

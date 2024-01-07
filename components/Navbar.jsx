@@ -28,8 +28,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px] lg:py-[30px]">
-      <div className="py-[30px] w-full flex justify-between items-center">
+    <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px]">
+      <div className="py-[20px] w-full flex justify-between items-center">
         <div>
           <h3>Ransel</h3>
         </div>

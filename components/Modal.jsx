@@ -4,26 +4,26 @@ import { CgCloseO } from "react-icons/cg";
 const Modal = ({ project, onClose }) => {
   console.log(project);
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main">
-      <div className="bg-white rounded-lg p-5 w-9/12 h-[80vh] relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4">
+      <div className="bg-white rounded-lg p-5 md:w-9/12 md:h-[80vh] relative flex items-center">
         <button
           onClick={onClose}
           className="absolute text-black right-4 top-3 text-[24px]"
         >
           <CgCloseO />
         </button>
-        <div className="flex items-center gap-3">
-          <div className="w-8/12 h-[70vh]">
-            <div className="relative w-full h-full drop-shadow-lg">
+        <div className="flex flex-col md:flex-row items-center gap-3">
+          <div className="w-full md:w-8/12 h-[20vh] md:h-[70vh] mt-10 md:mt-0 ">
+            <div className="relative w-full h-full drop-shadow-lg overflow-hidden">
               <Image
                 src={project.img}
                 alt={project.name}
                 fill
-                className="object-contain"
+                className="object-cover md:object-contain rounded-lg"
               />
             </div>
           </div>
-          <div className="w-6/12">
+          <div className="w-full md:w-6/12">
             <article>
               <h5 className="text-sm">Project</h5>
               <h2 className="text-[35px] font-bold">{project.name}</h2>
