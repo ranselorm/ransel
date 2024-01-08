@@ -18,10 +18,10 @@ const navlinks = [
     title: "Portfolio",
     path: "/portfolio",
   },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
 ];
 
 const Navbar = () => {

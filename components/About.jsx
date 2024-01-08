@@ -16,16 +16,13 @@ const About = () => {
             </div>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt, quidem reprehenderit alias consequatur omnis
-                laudantium, iure vel aliquid saepe nam accusamus tempora totam
-                voluptates voluptatum sapiente, sunt possimus adipisci debitis?
+                Hello there, I'm Randy, also known as [ransel]. My passion
+                revolves around crafting applications for the web.
               </p>
               <p className="my-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                amet accusantium nesciunt, sapiente delectus magnam possimus
-                facilis unde est dolores explicabo eligendi temporibus quaerat
-                neque harum perferendis sunt tempora rem.
+                I wielda diverse set of languages including HTML, CSS,
+                JavaScript. When it comes to frameworks, I'm well-versed in the
+                likes of ReactJS, Node.js, Django, and React Native.
               </p>
             </div>
             <Skills />
