@@ -15,16 +15,13 @@ const Hero = () => {
             I'm <span className="text-secondary">Randy</span>, a FullStack
             Developer.
           </h2>
-          <p className="text-[17px] lg:w-10/12">
+          <p className="text-[16px] lg:w-10/12 font-semibold">
             Specialized in MERN Stack, I welcome you to my world of innovative
             applications (web & mobile) development. Let's create something
             great together!
           </p>
           <div className="flex items-center gap-x-6">
-            {/* <Button text="Contact" fill={true} icon={<AiOutlineSend />} /> */}
             <Button text="Portfolio" fill={true} icon={<BsArrowRight />} />
-
-            {/* <Button text="Portfolio" /> */}
           </div>
           <div className="flex items-center gap-4 text-[23px]">
             <FaLinkedin className="shadow-lg text-[#008b8b] cursor-pointer" />

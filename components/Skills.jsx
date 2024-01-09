@@ -25,10 +25,14 @@ const skills = [
     icon: "/tw.png",
     name: "Tailwind",
   },
+  {
+    icon: "/git.png",
+    name: "Git",
+  },
 ];
 const Skills = () => {
   return (
-    <div className="h-[80px] flex justify-start items-center w-full">
+    <div className="h-[80px] flex justify-start items-center w-full -mt-4">
       <div className="flex flex-wrap justify-start items-center gap-x-[40px] gap-y-5 drop-shadow-md">
         {skills.map((skill, index) => (
           <div
