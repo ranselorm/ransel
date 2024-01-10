@@ -19,7 +19,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="text-black px-4">
+    <section className="text-black px-4 mb-[300px]">
       <article className="w-full text-center font-primary flex flex-col items-center gap-y-4 mb-12">
         <SubHeading text="Portfolio List" />
         <Heading text="Captivating Portfolio" />
