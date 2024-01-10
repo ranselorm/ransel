@@ -11,7 +11,10 @@ export const projects = [
     type: "Web application",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
+    url: "/",
+    stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
+
   {
     id: "2",
     name: "54Shaydes",
@@ -19,6 +22,8 @@ export const projects = [
     type: "Web application",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
+    url: "/",
+    stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
   {
     id: "3",
@@ -27,6 +32,8 @@ export const projects = [
     type: "Landing page",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
+    url: "/",
+    stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
   {
     id: "4",
@@ -35,6 +42,8 @@ export const projects = [
     type: "Website",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
+    url: "/",
+    stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
 ];
 

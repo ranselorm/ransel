@@ -1,14 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CgCloseO } from "react-icons/cg";
+import { MdLaunch } from "react-icons/md";
 
-const Modal = ({ project, onClose, isOpen }) => {
+const Modal = ({ project, onClose }) => {
   console.log(project);
   return (
-    <div
-      className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4 transition-opacity duration-500 ${
-        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-      }`}
-    >
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4 transition-all ease-in-out z-10">
       <div className="bg-white rounded-lg p-5 md:w-9/12 md:h-[80vh] relative flex items-center">
         <button
           onClick={onClose}
@@ -35,13 +33,30 @@ const Modal = ({ project, onClose, isOpen }) => {
                 type:
                 <span className="ml-2 font-bold">{project.type}</span>
               </p>
-              <p className="flex flex-col gap-2 mt-4">
+              <p className="flex flex-col gap-2 mt-4 my-6">
                 <span>About</span>
                 <span className="text-[14px]">{project.about}</span>
               </p>
-              <p>
-                Stack: <span>Next.js, Tailwind, MonoDB</span>
+              <p className="font-semibold text-sm mb-4">
+                Stack:
+                {project.stack.map((stack) => (
+                  <span className="ml-1">{stack}</span>
+                ))}
               </p>
+              <div className="flex gap-4">
+                <a
+                  href={"https://fonts.google.com/"}
+                  className="w-max bg-[#008b8b] py-[5px] px-2 rounded flex justify-center"
+                  target="blank"
+                >
+                  <button className="text-white flex items-center gap-x-1">
+                    <MdLaunch className="text-[17px]" />
+                    <span className="font-bold uppercase text-[13px]">
+                      Launch
+                    </span>
+                  </button>
+                </a>
+              </div>
             </article>
           </div>
         </div>
