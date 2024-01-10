@@ -5,7 +5,7 @@ import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="mt-[60px] h-screen font-main px-4 lg:px-[150px] lg:py-[30px]">
+    <section className="mt-[60px] lg:h-screen font-main px-4 lg:px-[150px] lg:py-[30px]">
       <div className="flex items-center flex-col lg:flex-row justify-between">
         <article className="w-full lg:w-12/12 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-semibold">
           <h4 className="text-[18px]">
@@ -21,7 +21,7 @@ const Hero = () => {
             great together!
           </p>
           <div className="flex items-center gap-x-6">
-            <Button text="Portfolio" fill={true} icon={<BsArrowRight />} />
+            <Button text="Portfolio" fill={true} />
           </div>
           <div className="flex items-center gap-4 text-[23px]">
             <FaLinkedin className="shadow-lg text-[#008b8b] cursor-pointer" />
@@ -29,7 +29,7 @@ const Hero = () => {
             <FaGithubSquare className="shadow-lg text-[#008b8b] cursor-pointer" />
           </div>
         </article>
-        <div className="lg:w-1/2 w-full flex justify-end mt-10 lg:mt-0">
+        <div className="lg:w-1/2 w-full md:flex md:justify-center lg:justify-end mt-10 lg:mt-0 hidden ">
           <div className="relative w-[320px] h-[320px]">
             <Image
               src="/shape3.png"

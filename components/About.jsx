@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { BsSend } from "react-icons/bs";
 import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section className="text-black/90 font-main -mt-[150px] px-4 lg:px-[150px] lg:py-[30px]">
-      <div className="flex flex-col-reverse md:flex-row-reverse items-center">
+    <section className="text-black/90 font-main lg:-mt-[150px] mt-8 px-4 lg:px-[150px]">
+      <div className="flex flex-col-reverse gap-y-8 md:flex-row-reverse items-center">
         <div className="w-full md:w-12/12">
           <article className="flex flex-col items-start gap-y-4">
             <div>
@@ -33,7 +32,8 @@ const About = () => {
               </p>
               <p className="my-4">
                 Beyond the realm of development, you'll likely find me immersing
-                myself in a captivating book, engaging in thrilling video games.
+                myself in a captivating book or engaging in thrilling video
+                games.
               </p>
             </div>
             <Skills />
