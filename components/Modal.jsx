@@ -1,10 +1,14 @@
 import Image from "next/image";
 import { CgCloseO } from "react-icons/cg";
 
-const Modal = ({ project, onClose }) => {
+const Modal = ({ project, onClose, isOpen }) => {
   console.log(project);
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4">
+    <div
+      className={`fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4 transition-opacity duration-500 ${
+        isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+      }`}
+    >
       <div className="bg-white rounded-lg p-5 md:w-9/12 md:h-[80vh] relative flex items-center">
         <button
           onClick={onClose}

@@ -1,32 +1,8 @@
 import Heading from "./Heading";
 import SubHeading from "./ui/SubHeading";
 // import { BsArrowRight } from "react-icons/bs";
-import { CgWebsite } from "react-icons/cg";
-import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { RiSeoFill } from "react-icons/ri";
 
-const services = [
-  {
-    title: "Web Applications",
-    desc: "Creating responsive, dynamic web apps using MongoDB, Express.js, React.js, and Node.js.",
-    icon: <HiOutlineDesktopComputer />,
-  },
-  {
-    title: "Landing Pages",
-    desc: "Developing high-converting and responsive landing pages with a focus on user engagement.",
-    icon: <CgWebsite />,
-  },
-  {
-    title: "API Integration",
-    desc: "Building and connecting RESTful APIs for seamless data exchange and functionality.",
-    icon: <CgWebsite />,
-  },
-  {
-    title: "SEO Practices",
-    desc: " Enhancing website visibility using search engine optimization techniques for better ranking.",
-    icon: <RiSeoFill />,
-  },
-];
+import { services } from "@/data";
 
 const Services = () => {
   return (

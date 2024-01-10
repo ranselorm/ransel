@@ -23,15 +23,16 @@ const Portfolio = () => {
       <article className="w-full text-center font-primary flex flex-col items-center gap-y-4 mb-12">
         <SubHeading text="Portfolio List" />
         <Heading text="Captivating Portfolio" />
-        <p className="text-[14px] w-1/2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-          debitis nam nesciunt praesentium expedita, commodi non voluptas,
+        <p className="text-[14px] md:w-1/2">
+          Take a peek at my portfolio, where my code does the cha-cha and
+          designs do the tango. It's where pixels and functionality have a party
+          on the web!
         </p>
       </article>
       <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div
-            className="lg:w-[250px] h-[250px] bg-white rounded-2xl shadow-lg flex flex-col items-center justify-center text-center gap-y-4 overflow-hidden relative group transition-all duration-500"
+            className="lg:w-[250px] lg:h-[250px] h-[300px] bg-white rounded-lg shadow-lg flex flex-col items-center justify-center text-center gap-y-4 overflow-hidden relative group transition-all duration-500"
             key={index}
             onClick={() => openModal(project)}
           >
@@ -46,7 +47,13 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      {isModalOpen && <Modal project={selectedProject} onClose={closeModal} />}
+      {isModalOpen && (
+        <Modal
+          project={selectedProject}
+          onClose={closeModal}
+          isOpen={isModalOpen}
+        />
+      )}
     </section>
   );
 };

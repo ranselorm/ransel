@@ -15,14 +15,13 @@ const About = () => {
             </div>
             <div className="text-[15px] font-semibold">
               <p>
-                Hello there, I'm Randy, also known as [ransel]. My passion
-                revolves around crafting applications for the web with a proven
-                expertise in building robust and responsive web applications
-                using React and Next.js.
+                Hey there! I'm Randy, but you can call me [ransel]. I make web
+                applications that work super smooth and look great, thanks to my
+                skills with React and Next.js.
               </p>
               <p className="my-4">
-                Fullstack proficiency with a strong focus on creating seamless
-                user interfaces and delightful user experiences.
+                Fullstack proficiency ensuring that every click leads you to a
+                page that not only works like a charm but also delights the eye.
               </p>
               <p>
                 <span className="mr-1">My Toolkit includes</span>
@@ -31,9 +30,11 @@ const About = () => {
                 Git
               </p>
               <p className="my-4">
-                Beyond the realm of development, you'll likely find me immersing
-                myself in a captivating book or engaging in thrilling video
-                games.
+                When I'm not writing code or engineering a project, you might
+                catch me lost in a good book or winning at video games. If you
+                think you're good at games, wait till you play against me.
+                Patrick could testify!
+                <span>😊</span>
               </p>
             </div>
             <Skills />
