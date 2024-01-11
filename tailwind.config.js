@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        primary: "linear-gradient(to right, #009688, #3b82f6)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -24,11 +25,7 @@ module.exports = {
         secondary: "var(--text-secondary)",
         accent: "var(--text-accent)",
       },
-      borderColor: {
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)",
-        accent: "var(--color-accent)",
-      },
+
       textColor: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",

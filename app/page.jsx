@@ -5,6 +5,7 @@ import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
+import Connect from "@/components/Connect";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       <About />
       <Skills />
       {/* <Services /> */}
-      {/* <Portfolio /> */}
+      <Portfolio />
+      <Connect />
       {/* <Contact /> */}
     </div>
   );

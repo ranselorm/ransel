@@ -6,7 +6,7 @@ const skills = [
     name: "HTML",
   },
   {
-    icon: "/css.png",
+    icon: "/c.png",
     name: "CSS",
   },
   {
@@ -44,13 +44,17 @@ const skills = [
 ];
 const Skills = () => {
   return (
-    <div className="h-[80px] flex justify-center items-center flex-col gap-y-6 w-4/12 max-md:w-full mt-[80px] md:mt-[150px] mx-auto text-black">
-      <div className="flex flex-col items-start gap-y-4">
+    <section className="h-[80px] flex justify-center items-center flex-col gap-y-6 w-4/12 max-md:w-full mx-auto text-black md:my-[200px] my-[150px] font-main">
+      <article className="flex flex-col items-center gap-y-4 mb-2 px-4 md:px-0">
         <div>
           <h2 className="text-[18px] font-semibold font-primary">Skills</h2>
-          <div className="w-[20px] h-[2px] bg-[#008b8b]" />
+          <div className="w-[20px] h-[2px] bg-primary" />
         </div>
-      </div>
+        <p className="md:text-[14px] text-center">
+          Skills, tools, and technologies that I handle better than a game
+          controller.
+        </p>
+      </article>
       <div className="flex flex-wrap justify-center items-center gap-x-[40px] gap-y-6 drop-shadow-md">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center gap-y-2">
@@ -66,7 +70,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

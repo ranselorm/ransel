@@ -45,8 +45,8 @@ const Modal = ({ project, onClose }) => {
               </p>
               <div className="flex gap-4">
                 <a
-                  href={"https://fonts.google.com/"}
-                  className="w-max bg-[#008b8b] py-[5px] px-2 rounded flex justify-center"
+                  href={project.url}
+                  className="w-max bg-primary py-[5px] px-2 rounded flex justify-center"
                   target="blank"
                 >
                   <button className="text-white flex items-center gap-x-1">

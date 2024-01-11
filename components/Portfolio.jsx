@@ -19,10 +19,12 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="text-black px-4 mb-[300px]">
+    <section className="text-black px-4 mb-[100px]">
       <article className="w-full text-center font-primary flex flex-col items-center gap-y-4 mb-12">
-        <SubHeading text="Portfolio List" />
-        <Heading text="Captivating Portfolio" />
+        <div>
+          <h2 className="text-[18px] font-semibold">Portfolio</h2>
+          <div className="w-[40px] h-[2px] bg-primary" />
+        </div>
         <p className="text-[14px] md:w-1/2">
           Take a peek at my portfolio, where my code does the cha-cha and
           designs do the tango. It's where pixels and functionality have a party

@@ -47,7 +47,9 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex">
-          <Button text="Let's Talk" icon={<BsArrowRight />} />
+          <button className="bg-primary px-4 py-1 rounded text-white text-[16px] font-main">
+            Contact Me
+          </button>
         </div>
       </div>
     </nav>

@@ -11,7 +11,7 @@ const About = () => {
               <h2 className="text-[18px] font-semibold font-primary">
                 About Me
               </h2>
-              <div className="w-[40px] h-[2px] bg-[#008b8b]" />
+              <div className="w-[40px] h-[2px] bg-primary" />
             </div>
             <div className="text-[15px] font-semibold">
               <p>

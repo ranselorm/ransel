@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Button from "./ui/Button";
-import { BsArrowRight } from "react-icons/bs";
 import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 
 const Hero = () => {
@@ -12,8 +10,8 @@ const Hero = () => {
             Hello there<span className="text-xl">&#x1F44B;</span>,
           </h4>
           <h2 className="text-3xl">
-            I'm <span className="text-secondary">Randy</span>, a FullStack
-            Developer.
+            I'm <span className="text-gradient-primary">Randy</span>, a
+            FullStack Developer.
           </h2>
           <p className="text-[16px] lg:w-10/12 font-semibold">
             Specialized in MERN Stack, I welcome you to my world of innovative
@@ -21,12 +19,14 @@ const Hero = () => {
             great together!
           </p>
           <div className="flex items-center gap-x-6">
-            <Button text="Portfolio" fill={true} />
+            <button className="bg-primary px-4 py-1 rounded text-white hover:bg-none hover:text-black">
+              Portfolio
+            </button>
           </div>
-          <div className="flex items-center gap-4 text-[23px]">
-            <FaLinkedin className="shadow-lg text-[#008b8b] cursor-pointer" />
-            <FaTwitterSquare className="shadow-lg text-[#008b8b] cursor-pointer" />
-            <FaGithubSquare className="shadow-lg text-[#008b8b] cursor-pointer" />
+          <div className="flex items-center gap-4 text-[23px] text-gradient-primary">
+            <FaLinkedin className="shadow-lg  cursor-pointer bg-primary" />
+            <FaTwitterSquare className="shadow-lg bg-primary cursor-pointer" />
+            <FaGithubSquare className="shadow-lg bg-primary  cursor-pointer" />
           </div>
         </article>
         <div className="lg:w-1/2 w-full md:flex md:justify-center lg:justify-end mt-10 lg:mt-0 hidden ">
