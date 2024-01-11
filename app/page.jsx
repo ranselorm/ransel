@@ -4,14 +4,16 @@ import ChooseMe from "@/components/ChooseMe";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
     <div className="">
       <Hero />
       <About />
-      <Services />
-      <Portfolio />
+      <Skills />
+      {/* <Services /> */}
+      {/* <Portfolio /> */}
       {/* <Contact /> */}
     </div>
   );

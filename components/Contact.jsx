@@ -3,10 +3,10 @@ import { AiOutlineSend } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <section className="px-4 lg:px-[150px] text-black font-main -mt-[260px]">
+    <section className="lg:px-[150px] text-black font-main md:-mt-[320px]">
       <div className=" h-max shadow-lg bg-[#008b8b] text-white rounded-lg overflow-hidden mx-auto">
-        <div className="flex justify-center flex-col">
-          <div className="w-8/12 py-4 px-10">
+        <div className="flex justify-center md:flex-row ">
+          <div className="md:w-8/12 py-4 md:px-10 px-4">
             <article>
               <div className="flex items-center justify-between mb-[2px]">
                 <h3 className="text-[22px] font-semibold">Let's Connect</h3>
@@ -21,7 +21,7 @@ const Contact = () => {
               className="flex flex-col gap-y-4 w-12/12 mt-6"
             >
               <div className="flex gap-4">
-                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[1.5px] border-white rounded  transition-all relative group w-full">
+                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[2px] border-white rounded  transition-all relative group w-full">
                   <input
                     type="text"
                     //   value={fullname}
@@ -33,7 +33,7 @@ const Contact = () => {
                     Your Name
                   </label>
                 </div>
-                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[1.5px] border-white rounded  transition-all relative group w-full">
+                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[2px] border-white rounded  transition-all relative group w-full">
                   <input
                     type="email"
                     //   value={email}
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[1.5px] border-white rounded  transition-all relative group w-full">
+                <div className="pt-[8px] py-1 pl-[20px] outline-none border-[2px] border-white rounded  transition-all relative group w-full">
                   <textarea
                     type="password"
                     //   value={password}
@@ -72,7 +72,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="w-4/12 bg-white text-black z-50">details</div>
+          <div className="md:w-4/12 bg-white text-black z-50 p-5">details</div>
         </div>
       </div>
     </section>

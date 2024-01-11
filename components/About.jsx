@@ -3,10 +3,10 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section className="text-black/90 font-main lg:-mt-[150px] mt-8 px-4 lg:px-[150px]">
+    <section className="text-black/90 font-main lg:-mt-[150px] mt-8 px-4 lg:px-[150px] text-center md:text-left">
       <div className="flex flex-col-reverse gap-y-8 md:flex-row-reverse items-center">
         <div className="w-full md:w-12/12">
-          <article className="flex flex-col items-start gap-y-4">
+          <article className="flex flex-col md:items-start items-center gap-y-4">
             <div>
               <h2 className="text-[18px] font-semibold font-primary">
                 About Me
@@ -37,7 +37,7 @@ const About = () => {
                 <span>😊</span>
               </p>
             </div>
-            <Skills />
+            {/* <Skills /> */}
           </article>
         </div>
         <div className="w-full md:w-9/12 flex justify-center">
