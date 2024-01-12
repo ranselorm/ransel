@@ -14,8 +14,8 @@ const Connect = () => {
             you bring the ideas!
           </div>
           <div className="w-full md:w-max">
-            <button className="bg-primary px-2 py-2 rounded text-white flex items-center justify-center gap-1 w-full">
-              <PiHandFistLight />
+            <button className="bg-primary px-3 py-3 rounded text-white flex items-center justify-center gap-1 w-full font-bold">
+              <PiHandFistLight className="text-[18px]" />
               <span className="text-[14px]">Let's do this</span>
             </button>
           </div>

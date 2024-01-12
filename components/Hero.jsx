@@ -15,8 +15,7 @@ const Hero = () => {
           </h2>
           <p className="text-[16px] lg:w-10/12 font-semibold">
             Specialized in MERN Stack, I welcome you to my world of innovative
-            applications (web & mobile) development. Let's create something
-            great together!
+            web applications development. Let's create something great together!
           </p>
           <div className="flex items-center gap-x-6">
             <button className="bg-primary px-4 py-1 rounded text-white hover:bg-none hover:text-black">
