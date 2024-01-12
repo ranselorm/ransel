@@ -3,8 +3,8 @@ import { PiHandFistLight } from "react-icons/pi";
 
 const Connect = () => {
   return (
-    <section className="md:px-[150px] px-4">
-      <div className="bg-[#002244] px-4 h-max md:h-[150px] py-8 md:py-0 mb-[200px] flex items-center justify-center text-white font-main rounded-lg">
+    <section className="md:px-[150px] px-4 my-[60px] md:my-[100px]">
+      <div className="bg-gray-900 px-4 h-max md:h-[150px] py-8 md:py-0 mb-[200px] flex items-center justify-center text-white font-main rounded-lg">
         <div className="flex flex-col md:flex-row items-center justify-between gap-x-8 gap-y-6">
           <div className="text-[25px] font-bold capitalize">
             Start a project

@@ -1,24 +1,19 @@
-import { FaGithub, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 p-4 md:px-[150px] px-4 font-main">
-      <div className="flex justify-between">
-        {/* Brand and Description */}
+    <footer className="bg-gray-900 text-gray-200 p-4 md:px-[150px] px-4 font-main py-10">
+      <div className="flex justify-between flex-col md:flex-row flex-wrap items-start gap-y-8">
         <div className="flex-1">
           <h3 className="text-xl font-bold mb-2">ranselorm</h3>
           <p className="text-sm mb-4">
             Specialized in MERN Stack, I welcome you to my world of innovative
             web applications development. Let's create something great together!
           </p>
-          <p className="text-xs">
-            &copy; {new Date().getFullYear()} ranselorm. All rights reserved.
-          </p>
         </div>
 
-        {/* Links Section */}
         <div className="flex-1 flex justify-center">
           <div>
             <div className="flex items-center mb-2 gap-2">
@@ -34,7 +29,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media Links */}
         <div>
           <div className="flex items-center mb-2 gap-2">
             <div className="w-[2px] h-[20px] bg-primary" />
@@ -57,6 +51,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-xs text-center mt-8">
+        &copy; {new Date().getFullYear()} ranselorm. All rights reserved.
+      </p>
     </footer>
   );
 };

@@ -50,12 +50,12 @@ const Skills = () => {
           <h2 className="text-[18px] font-semibold font-primary">Skills</h2>
           <div className="w-[20px] h-[2px] bg-primary" />
         </div>
-        <p className="md:text-[14px] text-center">
+        <p className="text-[15px] text-center">
           Skills, tools, and technologies that I handle better than a game
           controller.
         </p>
       </article>
-      <div className="flex flex-wrap justify-center items-center gap-x-[40px] gap-y-6 drop-shadow-md">
+      <div className="flex flex-wrap justify-center items-center gap-7 drop-shadow-md px-1">
         {skills.map((skill, index) => (
           <div key={index} className="flex flex-col items-center gap-y-2">
             <div className="relative w-[30px] md:w-[40px] h-[30px] md:h-[40px] flex flex-col">
