@@ -6,7 +6,7 @@ import { MdLaunch } from "react-icons/md";
 const Modal = ({ project, onClose }) => {
   console.log(project);
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4 transition-all ease-in-out z-10">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-main px-4 transition-all ease-in-out z-10 mt-[80px]">
       <div className="bg-white rounded-lg p-5 md:w-9/12 md:h-[80vh] relative flex items-center">
         <button
           onClick={onClose}
@@ -46,10 +46,10 @@ const Modal = ({ project, onClose }) => {
               <div className="flex gap-4">
                 <a
                   href={project.url}
-                  className="w-max bg-primary py-[5px] px-2 rounded flex justify-center"
+                  className="w-max bg-primary py-[5px] rounded flex justify-center"
                   target="blank"
                 >
-                  <button className="text-white flex items-center gap-x-1">
+                  <button className="text-white flex items-center gap-x-1 px-3 py-2">
                     <MdLaunch className="text-[17px]" />
                     <span className="font-bold uppercase text-[13px]">
                       Launch

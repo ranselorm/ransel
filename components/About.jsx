@@ -1,11 +1,11 @@
+"use client";
 import Image from "next/image";
-import Skills from "./Skills";
 
 const About = () => {
   return (
     <section
+      className="text-black/90 font-main lg:mt-[10px] mt-8 px-4 lg:px-[150px] text-center md:text-left"
       id="about"
-      className="text-black/90 font-main lg:-mt-[50px] mt-8 px-4 lg:px-[150px] text-center md:text-left"
     >
       <div className="flex flex-col-reverse gap-y-8 md:flex-row-reverse items-center">
         <div className="w-full md:w-12/12">
@@ -40,7 +40,6 @@ const About = () => {
                 <span>😊</span>
               </p>
             </div>
-            {/* <Skills /> */}
           </article>
         </div>
         <div className="w-full md:w-9/12 flex justify-center">

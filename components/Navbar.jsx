@@ -1,7 +1,5 @@
-// import { useActiveLink } from "next/navigation";
 "use client";
 import { usePathname } from "next/navigation";
-// import Link from "next/link";
 import { Link } from "react-scroll";
 
 const navlinks = [
@@ -17,10 +15,6 @@ const navlinks = [
     title: "Portfolio",
     id: "portfolio",
   },
-  // {
-  //   title: "Blog",
-  //   path: "/blog",
-  // },
 ];
 
 const Navbar = () => {
@@ -50,7 +44,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex">
-          <button className="bg-primary px-4 py-1 rounded text-white text-[16px] font-main">
+          <button className="bg-primary px-3 py-2 rounded text-white text-[16px] font-main">
             Contact Me
           </button>
         </div>

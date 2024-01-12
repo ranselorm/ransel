@@ -1,10 +1,12 @@
+"use client";
 import Image from "next/image";
+import { Link } from "react-scroll";
 import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
     <section
-      className="flex items-center lg:h-screen font-main px-4 lg:px-[150px] lg:py-[30px]"
+      className="flex items-center lg:h-screen font-main px-4 lg:px-[150px] lg:py-[30px] md:mt-[40px] mt-[130px]"
       id="home"
     >
       <div className="flex items-center flex-col lg:flex-row justify-between">
@@ -21,9 +23,17 @@ const Hero = () => {
             web applications development. Let's create something great together!
           </p>
           <div className="flex items-center gap-x-6">
-            <button className="bg-primary px-4 py-1 rounded text-white hover:bg-none hover:text-black">
-              Portfolio
-            </button>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={400}
+            >
+              <button className="bg-primary px-3 py-2 rounded text-white">
+                Portfolio
+              </button>
+            </Link>
           </div>
           <div className="flex items-center gap-4 text-[23px] text-gradient-primary">
             <FaLinkedin className="shadow-lg  cursor-pointer bg-primary" />
