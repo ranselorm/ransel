@@ -19,7 +19,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="text-black px-4">
+    <section className="text-black px-4" id="portfolio">
       <article className="w-full text-center font-main flex flex-col items-center gap-y-4 mb-12">
         <div>
           <h2 className="text-[18px] font-semibold font-primary">Portfolio</h2>

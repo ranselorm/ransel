@@ -3,7 +3,10 @@ import { FaLinkedin, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className="mt-[60px] lg:h-screen font-main px-4 lg:px-[150px] lg:py-[30px]">
+    <section
+      className="flex items-center lg:h-screen font-main px-4 lg:px-[150px] lg:py-[30px]"
+      id="home"
+    >
       <div className="flex items-center flex-col lg:flex-row justify-between">
         <article className="w-full lg:w-12/12 flex flex-col items-center lg:items-start justify-center text-center lg:text-left gap-y-6 text-primary font-semibold">
           <h4 className="text-[18px]">

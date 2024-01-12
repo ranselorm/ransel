@@ -1,22 +1,21 @@
 // import { useActiveLink } from "next/navigation";
 "use client";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
-import Button from "./ui/Button";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 
 const navlinks = [
   {
     title: "Home",
-    path: "/",
+    id: "home",
   },
   {
-    title: "Services",
-    path: "/services",
+    title: "About Me",
+    id: "about",
   },
   {
     title: "Portfolio",
-    path: "/portfolio",
+    id: "portfolio",
   },
   // {
   //   title: "Blog",
@@ -28,7 +27,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-transparent text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px]">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px] shadow-lg">
       <div className="py-[20px] w-full flex justify-between items-center">
         <div>
           <h3>Ransel</h3>
@@ -36,9 +35,13 @@ const Navbar = () => {
         <div className="lg:flex gap-x-10 hidden">
           {navlinks.map((link, index) => (
             <Link
-              href={link.path}
+              to={link.id}
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={400}
               key={index}
-              className={`hover:text-secondary transition-all ${
+              className={`hover:text-secondary transition-all cursor-pointer ${
                 pathname === link.path ? "text-secondary underline" : ""
               }`}
             >
