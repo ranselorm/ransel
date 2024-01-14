@@ -44,7 +44,10 @@ const skills = [
 ];
 const Skills = () => {
   return (
-    <section className="h-[80px] flex justify-center items-center flex-col gap-y-6 w-4/12 max-md:w-full mx-auto text-black md:my-[200px] my-[150px] font-main">
+    <section
+      id="skills"
+      className="flex justify-center items-center flex-col gap-y-6 w-4/12 max-md:w-full mx-auto text-black font-main my-[120px]"
+    >
       <article className="flex flex-col items-center gap-y-4 mb-2 px-4 md:px-0">
         <div>
           <h2 className="text-[18px] font-semibold font-primary">Skills</h2>

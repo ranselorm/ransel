@@ -12,6 +12,10 @@ const navlinks = [
     id: "about",
   },
   {
+    title: "Skills",
+    id: "skills",
+  },
+  {
     title: "Portfolio",
     id: "portfolio",
   },
