@@ -18,9 +18,9 @@ const About = () => {
             </div>
             <div className="text-[15px] font-semibold">
               <p>
-                Hey there! I'm Randy, but you can call me [ranselorm]. I make
-                web applications that work super smooth and looks great, thanks
-                to my skills with React and Next.js.
+                Hey there! I'm Randy, but you can call me [ransel]. I make web
+                applications that work super smooth and looks great, thanks to
+                my skills with React and Next.js.
               </p>
               <p className="my-4">
                 Fullstack proficiency ensuring that every click leads you to a

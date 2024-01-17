@@ -6,8 +6,10 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 p-4 md:px-[150px] px-4 font-main py-10">
       <div className="flex justify-between flex-col md:flex-row flex-wrap items-start gap-y-8">
-        <div className="flex-1">
-          <h3 className="text-xl font-bold mb-2">ranselorm</h3>
+        <div className="flex-1 flex flex-col items-start">
+          <div className="h-[50px] w-[130px]">
+            <img src="/ran.png" alt="" className="h-full w-full object-cover" />
+          </div>
           <p className="text-sm mb-4">
             Specialized in MERN Stack, I welcome you to my world of innovative
             web applications development. Let's create something great together!

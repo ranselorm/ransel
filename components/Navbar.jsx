@@ -27,8 +27,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px] shadow-lg">
       <div className="py-[20px] w-full flex justify-between items-center">
-        <div>
-          <h3>Ransel</h3>
+        <div className="h-[50px] w-[130px]">
+          <img src="/ran.png" alt="" className="h-full w-full object-cover" />
         </div>
         <div className="lg:flex gap-x-10 hidden">
           {navlinks.map((link, index) => (
@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex">
-          <button className="bg-primary px-3 py-2 rounded text-white text-[16px] font-main">
+          <button className="bg-none border-2 border-black px-3 py-2 rounded text-black text-[16px] font-main">
             Contact Me
           </button>
         </div>
