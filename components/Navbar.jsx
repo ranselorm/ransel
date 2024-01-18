@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white text-black font-primary text-[16.5px] font-medium px-4 lg:px-[150px] shadow-lg">
       <div className="py-[20px] w-full flex justify-between items-center">
-        <div className="h-[50px] w-[130px]">
+        <div className="h-[50px] w-[120px]">
           <img src="/ran.png" alt="" className="h-full w-full object-cover" />
         </div>
         <div className="lg:flex gap-x-10 hidden">

@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-200 p-4 md:px-[150px] px-4 font-main py-10">
       <div className="flex justify-between flex-col md:flex-row flex-wrap items-start gap-y-8">
         <div className="flex-1 flex flex-col items-start">
-          <div className="h-[50px] w-[130px]">
+          <div className="h-[50px] w-[120px]">
             <img src="/ran.png" alt="" className="h-full w-full object-cover" />
           </div>
           <p className="text-sm mb-4">
