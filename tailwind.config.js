@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const primaryBorderColor = "linear-gradient(to right, #009688, #3b82f6)";
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +26,9 @@ module.exports = {
         primary: "var(--text-primary)",
         secondary: "var(--text-secondary)",
         accent: "var(--text-accent)",
+      },
+      borderColor: {
+        primary: primaryBorderColor,
       },
 
       textColor: {
