@@ -6,43 +6,43 @@ import { RiSeoFill } from "react-icons/ri";
 export const projects = [
   {
     id: "1",
-    name: "Netflix",
-    img: "/web2.jpg",
-    type: "Web application",
+    name: "Elite Ryde",
+    img: "/elite2.png",
+    type: "Landing Page",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
-    url: "/",
+    url: "https://elite-landing-page.vercel.app/",
     stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
 
   {
     id: "2",
-    name: "54Shaydes",
+    name: "Adwenekoro",
     img: "/test.png",
-    type: "Web application",
+    type: "Landing Page",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
-    url: "/",
+    url: "https://orange-sky-049f07003-dev.westeurope.2.azurestaticapps.net/",
     stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
   {
     id: "3",
-    name: "Vine",
-    img: "/web3.jpg",
+    name: "Ecommerce",
+    img: "/shop2.png",
     type: "Landing page",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
-    url: "/",
+    url: "https://ecommerce-tan-zeta-52.vercel.app",
     stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
   {
     id: "4",
     name: "Portfolio",
-    img: "/web4.jpg",
+    img: "/sel.png",
     type: "Website",
     about:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit.Velit id qui voluptatibus. Iure accusamus rerum adipisci ullam beatae magnam voluptas nemo. Quam vel, animi consequatur error odit natus labore commodi?",
-    url: "/",
+    url: "https://ransel.vercel.app/",
     stack: ["Next.js, React.js, Tailwind, Node.js"],
   },
 ];

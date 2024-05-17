@@ -18,7 +18,7 @@ const Hero = () => {
             I'm <span className="text-gradient-primary">Randy</span>, a
             FullStack Developer.
           </h2>
-          <p className="text-[16px] lg:w-10/12 font-semibold">
+          <p className="text-base lg:w-10/12 font-semibold">
             Specialized in MERN Stack, I welcome you to my world of innovative
             web applications development. Let's create something great together!
           </p>

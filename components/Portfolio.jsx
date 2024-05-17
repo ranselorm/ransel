@@ -5,13 +5,14 @@ import Heading from "./Heading";
 import { projects } from "@/data";
 import Modal from "./Modal";
 import { Card, Metric, Text } from "@tremor/react";
+import Link from "next/link";
 
 const Portfolio = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openModal = (project) => {
-    // setSelectedProject(project);
+    setSelectedProject(project);
     setIsModalOpen(true);
   };
 
@@ -35,28 +36,28 @@ const Portfolio = () => {
       <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-6">
         {projects.map((project, index) => (
           <div
-            className="lg:w-[250px] lg:h-[250px] h-[300px] bg-white rounded-[15px] shadow-lg flex flex-col items-center justify-center text-center gap-y-4 overflow-hidden relative group transition-all duration-500  gradient-border-top"
+            className="lg:w-[250px] lg:h-[250px] h-[300px] bg-white rounded-[15px] shadow-lg flex flex-col items-center justify-center text-center gap-y-4 overflow-hidden relative group transition-all duration-150 gradient-border-top hover:scale-105"
             key={index}
-            onClick={() => openModal(project)}
+            // onClick={() => openModal(project)}
           >
             <img
               src={project.img}
               alt=""
               className="w-full h-full object-cover"
             />
-            <div className="absolute bg-black bg-opacity-75 inset-0 text-white items-center justify-center hidden group-hover:flex cursor-pointer">
-              <p>{project.name}</p>
+            <div className="absolute bg-black bg-opacity-0 inset-0 text-white items-center justify-center flex opacity-0 group-hover:bg-opacity-75 group-hover:opacity-100 transition-all duration-150">
+              <Link href={project.url}>{project.name}</Link>
             </div>
           </div>
         ))}
       </div>
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <Modal
           project={selectedProject}
           onClose={closeModal}
           isOpen={isModalOpen}
         />
-      )}
+      )} */}
     </section>
   );
 };
